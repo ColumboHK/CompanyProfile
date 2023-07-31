@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -13,19 +13,24 @@
   }
 }
 
+/* 
+This is where we setup the background colour of our React App
+We set the background colour with background-color,
+and we set the font colour with color
+*/
 .App-header {
-  background-color: #282c34;
+  background-color: #FFFFFF;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #0898c0;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +40,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.body {
+  /* We need to top pad to prevent overlap with the navbar */
+  padding-top: 70px;
 }
