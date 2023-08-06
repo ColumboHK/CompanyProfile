@@ -5,11 +5,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 const About = () => {
     return (
-      <Container fluid className={"no-gutters mx-0 px-0 pt-28"}>
-          <h1 style={{ paddingBottom: 15 }} className="heading">
-              About Us
-          </h1>
-      </Container>
+        <section className="bg-gradient-to-r from-cyan-500 to-blue-500">
+            <Container fluid className={"no-gutters mx-0 px-0 pt-28"}>
+                <h1 style={{ paddingBottom: 15 }} className="heading font-mono font-bold mx-28">
+                    About Us
+                </h1>
+            </Container>
+        </section>
     );
   }
   

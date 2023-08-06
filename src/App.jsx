@@ -6,10 +6,12 @@ import Home from "./components/Home/Home";
 import PreLoader from "./components/PreLoader";
 import NavBar from "./components/NavBar";
 import ScrollToTop from "./components/ScrollToTop";
-import About from "./components/About/About"
-import Registration from "./components/Registration/Registration"
-import UseCases from "./components/UseCases/UseCases"
+import About from "./components/About/About";
+import Registration from "./components/Registration/Registration";
+import UseCases from "./components/UseCases/UseCases";
 import ProductFeatures from "./ProductFeatures/ProductFeatures";
+import Error from "./components/errorPage";
+import Footer from "./components/Footer";
 
 import {
     BrowserRouter as Router,
@@ -42,8 +44,9 @@ const App = () => {
                     <Route path="/registration" element={<Registration />} />
                     <Route path="/usecases" element={<UseCases />} />
                     <Route path="/productfeatures" element={<ProductFeatures />} />
+                    <Route path="*" element={<Error />} />
                 </Routes>
-            
+                <Footer />
             </div>
         
         </Router>

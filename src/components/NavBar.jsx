@@ -4,9 +4,14 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 
-import logo from "../Assets/logo.jpg";
+import logo from "../Assets/logo.png";
 
-import { AiOutlineHome } from "react-icons/ai";
+import { AiOutlineHome, 
+         AiFillQuestionCircle,
+         AiOutlineSearch } from "react-icons/ai";
+import { FaProductHunt } from "react-icons/fa";
+import { HiDocumentSearch } from "react-icons/hi";
+import { MdAppRegistration } from "react-icons/md";
 
 const NavBar = () => {
     const [expand, updateExpanded] = useState(false);
@@ -24,10 +29,11 @@ const NavBar = () => {
 
 
     return (
-        <Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"}>
-            <Container>
-                <Navbar.Brand href="/" className="navbar navbar-light fixed-top py-lg-0">
-                    <img src={logo} width="10" height="10" className="inline-flex" alt="CompanyLogo"></img>
+        <Navbar expanded={expand} fixed="top" expand="md" className="bg-gradient-to-r from-cyan-500 to-blue-500">
+        {/* // <Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"} style={{backgroundColor: "rgba(255,255,255,1.0)"}}> */}
+            <Container fluid className="">
+                <Navbar.Brand href="/" className="navbar navbar-light py-0 fixed left-0 top-0">
+                    <img src={logo} className="inline-flex object-left-top h-20 w-20" alt="CompanyLogo"></img>
                 </Navbar.Brand>
                 
                 <Navbar.Toggle
@@ -41,37 +47,37 @@ const NavBar = () => {
                     <Nav className="flex justify-end" style={{ width: "100%"}}>
                         <Nav.Item>
                             <Nav.Link as={Link} eventKey="/" to="/"  style={{color:"black"}}>
-                                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                                <AiOutlineHome style={{ position: "center", marginBottom: "2px" }} /> Home
                             </Nav.Link>
                         </Nav.Item>
 
                         <Nav.Item>
-                            <Nav.Link as={Link} eventKey="/about" to="about" style={{color:"black"}} className="hover:text-teal-300">
-                                <AiOutlineHome style={{ marginBottom: "2px" }} /> About Us
+                            <Nav.Link as={Link} eventKey="/about" to="about" style={{color:"black"}}>
+                                <AiFillQuestionCircle style={{ marginBottom: "2px" }} /> About Us
                             </Nav.Link>
                         </Nav.Item>
 
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/productfeatures" eventKey="/productfeatures" onClick={() => updateExpanded(false)} style={{color:"black"}}>
-                                <AiOutlineHome style={{ marginBottom: "2px" }} /> Product Features
+                            <Nav.Link as={Link} to="/productfeatures" eventKey="/productfeatures" style={{color:"black"}}>
+                                <FaProductHunt style={{ marginBottom: "2px" }} /> Product Features
                             </Nav.Link>
                         </Nav.Item>
                         
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/usecases" eventKey="/usecases" onClick={() => updateExpanded(false)} style={{color:"black"}}>
-                                <AiOutlineHome style={{ marginBottom: "2px" }} /> Use Cases
+                            <Nav.Link as={Link} to="/usecases" eventKey="/usecases" style={{color:"black"}}>
+                                <HiDocumentSearch style={{ marginBottom: "2px" }} /> Use Cases
                             </Nav.Link>
                         </Nav.Item>
 
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/Search" eventKey="/Search" onClick={() => updateExpanded(false)} style={{color:"black"}}>
-                                <AiOutlineHome style={{ marginBottom: "2px" }} /> Search
+                            <Nav.Link as={Link} to="/Search" eventKey="/Search" style={{color:"black"}}>
+                                <AiOutlineSearch style={{ marginBottom: "2px" }} /> Search
                             </Nav.Link>
                         </Nav.Item>
 
                         <Nav.Item>
-                            <Nav.Link as={Link} to="/registration" eventKey="/registration" onClick={() => updateExpanded(false)} style={{color:"black"}}>
-                                <AiOutlineHome style={{ marginBottom: "2px" }} /> Join Us!
+                            <Nav.Link as={Link} to="/registration" eventKey="/registration" style={{color:"black"}}>
+                                <MdAppRegistration style={{ marginBottom: "2px" }} /> Join Us!
                             </Nav.Link>
                         </Nav.Item>
                     </Nav>
