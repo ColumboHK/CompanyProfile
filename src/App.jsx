@@ -19,7 +19,8 @@ import {
     BrowserRouter as Router,
     Route,
     Routes,
-    Navigate
+    Navigate,
+    HashRouter
 } from "react-router-dom";
 
 const App = () => {
@@ -39,7 +40,7 @@ const App = () => {
     }, []);
 
     return (
-        <Router>
+        <HashRouter>
             <PreLoader load={load} />
             <div className="">
                 <NavBar />
@@ -56,7 +57,7 @@ const App = () => {
                 <Footer />
             </div>
         
-        </Router>
+        </HashRouter>
     );
 }
 
