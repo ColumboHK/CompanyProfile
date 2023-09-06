@@ -20,6 +20,7 @@ and we set the font colour with color
 */
 .App-header {
   background-color: #FFFFFF;
+  /* background-color: blue; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;

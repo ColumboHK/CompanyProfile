@@ -13,7 +13,7 @@ import { FaProductHunt } from "react-icons/fa";
 import { HiDocumentSearch } from "react-icons/hi";
 import { MdAppRegistration } from "react-icons/md";
 
-const NavBar = () => {
+const NavBar = (props) => {
     const [expand, updateExpanded] = useState(false);
     const [navColour, updateNavbar] = useState(false);
 
@@ -29,7 +29,12 @@ const NavBar = () => {
 
 
     return (
-        <Navbar expanded={expand} fixed="top" expand="md" className="bg-gradient-to-r from-cyan-500 to-blue-500">
+        <Navbar expanded={expand} fixed="top" expand="md" className={
+            (props.transparent
+              ? "top-0 absolute z-50 w-full"
+              : "relative shadow-lg bg-white shadow-lg") +
+            " flex flex-wrap items-center justify-between px-2 py-3 "
+          }>
         {/* // <Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"} style={{backgroundColor: "rgba(255,255,255,1.0)"}}> */}
             <Container fluid className="">
                 <Navbar.Brand href="/" className="navbar navbar-light py-0 fixed left-0 top-0">
@@ -51,11 +56,11 @@ const NavBar = () => {
                             </Nav.Link>
                         </Nav.Item>
 
-                        <Nav.Item>
+                        {/* <Nav.Item>
                             <Nav.Link as={Link} eventKey="/about" to="about" style={{color:"black"}}>
                                 <AiFillQuestionCircle style={{ marginBottom: "2px" }} /> About Us
                             </Nav.Link>
-                        </Nav.Item>
+                        </Nav.Item> */}
 
                         <Nav.Item>
                             <Nav.Link as={Link} to="/productfeatures" eventKey="/productfeatures" style={{color:"black"}}>
@@ -69,11 +74,11 @@ const NavBar = () => {
                             </Nav.Link>
                         </Nav.Item>
 
-                        <Nav.Item>
+                        {/* <Nav.Item>
                             <Nav.Link as={Link} to="/Search" eventKey="/Search" style={{color:"black"}}>
                                 <AiOutlineSearch style={{ marginBottom: "2px" }} /> Search
                             </Nav.Link>
-                        </Nav.Item>
+                        </Nav.Item> */}
 
                         <Nav.Item>
                             <Nav.Link as={Link} to="/registration" eventKey="/registration" style={{color:"black"}}>

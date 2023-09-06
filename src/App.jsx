@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from './Assets/logo.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './App.css';
 
 import Home from "./components/Home/Home";
@@ -31,6 +33,11 @@ const App = () => {
         return () => clearTimeout(timer);
     }, []);
 
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
     return (
         <Router>
             <PreLoader load={load} />
@@ -39,7 +46,7 @@ const App = () => {
                 <ScrollToTop />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
+                    {/* <Route path="/about" element={<About />} /> */}
                     {/* <Route path="*" element={<Navigate to="/"/>} /> */}
                     <Route path="/registration" element={<Registration />} />
                     <Route path="/usecases" element={<UseCases />} />

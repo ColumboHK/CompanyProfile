@@ -13,15 +13,17 @@ import HKSTP from "../../Assets/HKSTP.png";
 
 const UseCases = () => {
     return (
-        <section className="bg-gradient-to-r from-cyan-500 to-blue-500">
-            <Container fluid className={"no-gutters mx-0 px-0 pt-28"}>
-                <h1 style={{ paddingBottom: 15 }} className="heading font-mono font-bold mx-28">
+        <section className="bg-cyan-50">
+            <div style={{display:'flex', justifyContent:'left'}} className="py-32">
+                <h1 className="px-12 text-[2.5rem] font-semibold leading-normal capitalize sm:pr-8 xl:pr-10">
                     Use Cases
                 </h1>
+            </div>
+            <h3 data-aos="fade-right" data-aos-once="true" className="flex justify-center font-semibold leading-normal py-12">
+                Academic Conferences
+            </h3>
+            <Container fluid className={"no-gutters mx-0 px-0"}>
                 <Row className="align-items-center py-0 my-0">
-                    <h3 className="flex justify-center pt-32">
-                        Academic Conferences
-                    </h3>
                     <Col>
                         <img src={ICML}
                              className="inset-0 scale-50 mx-auto"
@@ -41,48 +43,53 @@ const UseCases = () => {
                         </img>
                     </Col>
                 </Row>
+            </Container>
+            <h3 data-aos="fade-right" data-aos-once="true" className="flex justify-center font-semibold leading-normal py-12">
+                Exhibitions
+            </h3>
+            <Container fluid className={"no-gutters mx-0 px-0"}>
                 <Row className="align-items-center py-0 my-0">
-                    <h3 className="flex justify-center pt-32">
-                        Exhibitions
-                    </h3>
-
                 </Row>
-                <Row className="align-items-center py-0 my-0">
-                    <h3 className="flex justify-center pt-32">
-                        Interest Groups
-                    </h3>
+            </Container>
+            <h3 data-aos="fade-right" data-aos-once="true" className="flex justify-center font-semibold leading-normal py-12">
+                Interest Groups
+            </h3>
+            <Container fluid className={"no-gutters mx-0 px-0"}>
+                <Row className="align-items-center">
                     <Col>
                         <img src={BasketBallGroup}
-                             className="inset-0 scale-50 mx-auto"
+                             className="inset-0 scale-75 mx-auto"
                              alt="BasketBall Group">
                         </img>
                     </Col>
                     <Col>
                         <img src={ReadingGroup}
-                             className="inset-0 scale-50 mx-auto"
+                             className="inset-0 mx-auto"
                              alt="Reading Group">
                         </img>
                     </Col>
                 </Row>
-                <Row className="align-items-center py-0 my-0">
-                    <h3 className="flex justify-center pt-32">
-                        Organizations
-                    </h3>
+            </Container>
+            <h3 data-aos="fade-right" data-aos-once="true" className="flex justify-center font-semibold leading-normal py-12">
+                Organizations
+            </h3>
+            <Container fluid className={"no-gutters mx-0 px-0"}>
+                <Row className="align-items-center">
                     <Col>
                         <img src={CityUHK}
-                             className="inset-0 scale-50 mx-auto"
+                             className="inset-0 scale-75 mx-auto"
                              alt="CityUHK">
                         </img>
                     </Col>
                     <Col>
                         <img src={HKTech300}
-                             className="inset-0 scale-50 mx-auto"
+                             className="inset-0 scale-75 mx-auto"
                              alt="HKTech300">
                         </img>
                     </Col>
                     <Col>
                         <img src={HKSTP}
-                             className="inset-0 scale-50 mx-auto"
+                             className="inset-0 scale-75 mx-auto"
                              alt="HKSTP">
                         </img>
                     </Col>

@@ -13,7 +13,7 @@ const Footer = () => {
     let year = date.getFullYear();
 
     return (
-        <Container fluid className="bottom-0 pt-10 pb-8 bg-gradient-to-r from-cyan-500 to-blue-500">
+        <Container fluid className="bottom-0 pt-10 pb-8 bg-gray-300">
             <Row>
                 <Col md={4} className="text-center">
                     <h3 className="text-xs my-8">

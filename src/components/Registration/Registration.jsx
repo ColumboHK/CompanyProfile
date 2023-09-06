@@ -34,53 +34,62 @@ const Registration = () => {
     }
 
     return (
-        <section className="bg-gradient-to-r from-cyan-500 to-blue-500">
-            <Container fluid className={"no-gutters mx-0 px-0 pt-28"}>
-                <div className="">
-                    <Container fluid className={"no-gutters mx-0 px-0"}>
-                        <h1 className="heading font-mono font-bold mx-28">
-                            Registration
-                        </h1>
-                    </Container>
-                    <Container className="pt-12">
-                        <div>
-                            <label className="">
-                                First Name
-                            </label>
-                            <input className="" type="text" value={firstName} onChange = {(e) => handleInputChange(e)} id="firstName" placeholder="First Name"/>
-                        </div>
-                        <div>
-                            <label className="">
-                                Last Name
-                            </label>
-                            <input className="" type="text" value={lastName} onChange = {(e) => handleInputChange(e)} id="lastName" placeholder="Last Name"/>
-                        </div>
-                        <div>
-                            <label className="">
-                                Email
-                            </label>
-                            <input className="" type="text" value={email} onChange = {(e) => handleInputChange(e)} id="email" placeholder="Email"/>
-                        </div>
-                        <div>
-                            <label className="">
-                                Password
-                            </label>
-                            <input className="" type="text" value={password} onChange = {(e) => handleInputChange(e)} id="password" placeholder="Password"/>
-                        </div>
-                        <div>
-                            <label className="">
-                                Confirm Password
-                            </label>
-                            <input className="" type="text" value={confirmPassword} onChange = {(e) => handleInputChange(e)} id="confirmPassword" placeholder="Confirm Password"/>
-                        </div>
-                    </Container>
-                    <Container className="">
-                        <div>
-                            <button onClick={()=>handleSubmit()} type="submit" className="">
-                                Register
-                            </button>
-                        </div>
-                    </Container>
+        <section className="bg-cyan-50">
+            <h1 className="px-12 text-[2.5rem] font-semibold leading-normal capitalize sm:pr-8 xl:pr-10 pt-32">
+                Registration
+            </h1>
+            <Container fluid className={"no-gutters px-0 py-12 justify-center"}>
+                <div className="px-12">
+                    <div className="pb-2">
+                        <label className="font-semibold">
+                            First Name
+                        </label>
+                        <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 
+                                          focus:border-blue-500 block w-25 p-2.5 dark:bg-slate-300 dark:border-gray-600 
+                                          dark:placeholder-gray-500 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                               type="text" value={firstName} onChange = {(e) => handleInputChange(e)} id="firstName" placeholder="First Name" required/>
+                    </div>
+                    <div className="pb-2">
+                        <label className="font-semibold">
+                            Last Name
+                        </label>
+                        <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 
+                                          focus:border-blue-500 block w-25 p-2.5 dark:bg-slate-300 dark:border-gray-600 
+                                          dark:placeholder-gray-500 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                               type="text" value={lastName} onChange = {(e) => handleInputChange(e)} id="lastName" placeholder="Last Name"/>
+                    </div>
+                    <div className="pb-2">
+                        <label className="font-semibold">
+                            Email
+                        </label>
+                        <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 
+                                          focus:border-blue-500 block w-25 p-2.5 dark:bg-slate-300 dark:border-gray-600 
+                                          dark:placeholder-gray-500 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                               type="text" value={email} onChange = {(e) => handleInputChange(e)} id="email" placeholder="Email"/>
+                    </div>
+                    <div className="pb-2">
+                        <label className="font-semibold">
+                            Password
+                        </label>
+                        <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 
+                                          focus:border-blue-500 block w-25 p-2.5 dark:bg-slate-300 dark:border-gray-600 
+                                          dark:placeholder-gray-500 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                               type="text" value={password} onChange = {(e) => handleInputChange(e)} id="password" placeholder="Password"/>
+                    </div>
+                    <div className="pb-2">
+                        <label className="font-semibold">
+                            Confirm Password
+                        </label>
+                        <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 
+                                          focus:border-blue-500 block w-25 p-2.5 dark:bg-slate-300 dark:border-gray-600 
+                                          dark:placeholder-gray-500 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                               type="text" value={confirmPassword} onChange = {(e) => handleInputChange(e)} id="confirmPassword" placeholder="Confirm Password"/>
+                    </div>
+                    <div className="pt-8">
+                        <button onClick={()=>handleSubmit()} type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                            Register
+                        </button>
+                    </div>
                 </div>
             </Container>
         </section>

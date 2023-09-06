@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 const ErrorPage = () => {
 
     return (
-        <section className="bg-gradient-to-r from-cyan-500 to-blue-500">
+        <section className="bg-cyan-50">
             <Container fluid className={"no-gutters mx-0 px-0 pt-28"}>
                 <h1 className="">
                     Error 404
