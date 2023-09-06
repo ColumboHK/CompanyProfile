@@ -19,8 +19,7 @@ import {
     BrowserRouter as Router,
     Route,
     Routes,
-    Navigate,
-    HashRouter
+    Navigate
 } from "react-router-dom";
 
 const App = () => {
