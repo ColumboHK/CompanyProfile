@@ -40,7 +40,7 @@ const App = () => {
     }, []);
 
     return (
-        <BrowserRouter>
+        <Router>
             <PreLoader load={load} />
             <div className="">
                 <NavBar />
@@ -57,7 +57,7 @@ const App = () => {
                 <Footer />
             </div>
         
-        </BrowserRouter>
+        </Router>
     );
 }
 
