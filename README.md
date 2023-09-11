@@ -68,3 +68,53 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### Deploy to GitHub
+
+* make sure the following package is installed with npm:
+```
+gh-pages
+```
+
+* Add the following line to package.json:
+```
+"homepage": "https://columbohk.github.io/CompanyProfile",
+```
+
+so the code now looks like the following:
+
+```
+{
+  "name": "columbo-profile",
+  "version": "0.1.0",
+  "homepage": "https://columbohk.github.io/CompanyProfile",
+  ...
+}
+```
+
+* Add the following lines into package.json's "scripts tag:
+```
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build",
+```
+
+so the code now looks like the following:
+```
+"scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+```
+
+* To actually deploy the React App to Github Pages, run the following command in Terminal:
+```
+npm run deploy
+```
+
+* For more information for how to deploy to github, check out the following repo:
+https://github.com/gitname/react-gh-pages

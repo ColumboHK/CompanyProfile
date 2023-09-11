@@ -37,7 +37,7 @@ const NavBar = (props) => {
           }>
         {/* // <Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"} style={{backgroundColor: "rgba(255,255,255,1.0)"}}> */}
             <Container fluid className="">
-                <Navbar.Brand href="/" className="navbar navbar-light py-0 fixed left-0 top-0">
+                <Navbar.Brand href="/CompanyProfile" className="navbar navbar-light py-0 fixed left-0 top-0">
                     <img src={logo} className="inline-flex object-left-top h-20 w-20" alt="CompanyLogo"></img>
                 </Navbar.Brand>
                 
