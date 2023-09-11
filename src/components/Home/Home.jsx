@@ -80,7 +80,7 @@ const Home = () => {
                     Connect with your world through community power
                 </h2>
                 {/* <br/> */}
-                <h2 className="italic text-green-400">
+                <h2 className="italic text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-400">
                     Build, Organize, Provide!
                 </h2>
             </div>
