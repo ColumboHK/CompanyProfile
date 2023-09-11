@@ -73,7 +73,7 @@ const Home = () => {
         </Container>
         <div className="px-12 py-16 flex">
             <img src={ProductOverview} className="object-scale-down max-h-full mx-auto object-left"
-                    alt="Product Overview">
+                    alt="Product Overview" loading="lazy">
             </img>
             <div className="px-12 pt-40">
                 <h2 className="">
@@ -84,6 +84,24 @@ const Home = () => {
                     Build, Organize, Provide!
                 </h2>
             </div>
+        </div>
+        <div fluid className="top-auto bottom-0 left-0 right-0 w-full relative pointer-events-none overflow-hidden"
+                style={{ height: "70px" }}>
+                <svg
+                    className="relative bottom-0 overflow-hidden bg-gradient-to-r from-purple-100 to-purple-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none"
+                    version="1.1"
+                    viewBox="0 0 2560 100"
+                    x="0"
+                    y="0"
+                >
+                    <polygon
+                        className="text-cyan-50 fill-current"
+                        points="2560 0 2560 100 0 0"
+                        // points="0 0 0 100 2560 0"
+                    ></polygon>
+                </svg>
         </div>
         <div className="px-12 py-16 flex">
             <div className="px-12 pt-40 text-xl">
@@ -135,7 +153,7 @@ const Home = () => {
                         <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={Meixuan}
                             className="aos-init aos-animate"
                             style={{ width: "60%", height: "60%", justifyContent: 'center' }}
-                            alt="Meixuan">
+                            alt="Meixuan" loading="lazy">
                         </img>
                     </div>
                     <div className="item-body py-48 px-12">
@@ -150,7 +168,7 @@ const Home = () => {
                         <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={Vincent}
                             className="aos-init aos-animate"
                             style={{ width: "60%", height: "60%", justifyContent: 'center' }}
-                            alt="Vincent">
+                            alt="Vincent" loading="lazy">
                         </img>
                     </div>
                     <div className="item-body py-48 px-12">
@@ -191,7 +209,7 @@ const Home = () => {
                 <Col className="content-center">
                     <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={CityUHK}
                          className="inset-0 scale-75 py-28 mx-auto aos-init aos-animate"
-                         alt="CityUHK">
+                         alt="CityUHK" loading="lazy">
                     </img>
                     <p className="text-center font-bold italic">
                         City University of Hong Kong
@@ -200,7 +218,7 @@ const Home = () => {
                 <Col className="content-center">
                     <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={HKTech300}
                          className="inset-0 scale-75 mx-auto aos-init aos-animate"
-                         alt="HKTech 300">
+                         alt="HKTech 300" loading="lazy">
                     </img>
                     <p className="text-center font-bold italic">
                     HKTech 300
@@ -209,7 +227,7 @@ const Home = () => {
                 <Col className="content-center">
                     <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={HKSTP}
                          className="inset-0 scale-75 py-24 mx-auto aos-init aos-animate"
-                         alt="HKSTP">
+                         alt="HKSTP" loading="lazy">
                     </img>
                     <p className="text-center font-bold italic">
                     HKSTP

@@ -27,19 +27,19 @@ const UseCases = () => {
                     <Col>
                         <img src={ICML}
                              className="inset-0 scale-50 mx-auto"
-                             alt="ICML">
+                             alt="ICML" loading="lazy">
                         </img>
                     </Col>
                     <Col>
                         <img src={CVPR}
                              className="inset-0 scale-50 mx-auto"
-                             alt="CVPR">
+                             alt="CVPR" loading="lazy">
                         </img>
                     </Col>
                     <Col>
                         <img src={Neurips}
                              className="inset-0 scale-50 mx-auto"
-                             alt="Neurips">
+                             alt="Neurips" loading="lazy">
                         </img>
                     </Col>
                 </Row>
@@ -59,13 +59,13 @@ const UseCases = () => {
                     <Col>
                         <img src={BasketBallGroup}
                              className="inset-0 scale-75 mx-auto"
-                             alt="BasketBall Group">
+                             alt="BasketBall Group" loading="lazy">
                         </img>
                     </Col>
                     <Col>
                         <img src={ReadingGroup}
                              className="inset-0 mx-auto"
-                             alt="Reading Group">
+                             alt="Reading Group" loading="lazy">
                         </img>
                     </Col>
                 </Row>
@@ -78,19 +78,19 @@ const UseCases = () => {
                     <Col>
                         <img src={CityUHK}
                              className="inset-0 scale-75 mx-auto"
-                             alt="CityUHK">
+                             alt="CityUHK" loading="lazy">
                         </img>
                     </Col>
                     <Col>
                         <img src={HKTech300}
                              className="inset-0 scale-75 mx-auto"
-                             alt="HKTech300">
+                             alt="HKTech300" loading="lazy">
                         </img>
                     </Col>
                     <Col>
                         <img src={HKSTP}
                              className="inset-0 scale-75 mx-auto"
-                             alt="HKSTP">
+                             alt="HKSTP" loading="lazy">
                         </img>
                     </Col>
                 </Row>

@@ -32,13 +32,13 @@ const ProductFeatures = () => {
                     </p>
                 </div>
                 <img src={GroupSettings} className="object-scale-down pt-4 max-h-full mx-auto object-left"
-                        alt="Group Settings">
+                        alt="Group Settings" loading="lazy">
                 </img>
             </div>
             
             <div className="px-12 pt-12 mx-auto flex">
                 <img src={SubGroup} className="object-scale-down pt-4 max-h-full mx-auto object-left"
-                    alt="Sub-groups">
+                    alt="Sub-groups" loading="lazy">
                 </img>
                 <div className="px-12 pt-40 text-xl">
                     <h1 className="px-12 text-[2.5rem] font-bold leading-tight capitalize">
@@ -66,13 +66,13 @@ const ProductFeatures = () => {
                     </p>
                 </div>
                 <img src={GroupEvent} className="object-scale-down pt-4 max-h-full mx-auto object-left"
-                        alt="Group Event">
+                        alt="Group Event" loading="lazy">
                 </img>
             </div>
             
             <div className="px-12 pt-12 mx-auto flex">
                 <img src={Messaging} className="object-scale-down pt-4 max-h-full mx-auto object-left"
-                    alt="Messaging">
+                    alt="Messaging" loading="lazy">
                 </img>
                 <div className="px-12 pt-40 text-xl">
                     <h1 className="px-12 text-[2.5rem] font-bold leading-tight capitalize">
@@ -98,7 +98,7 @@ const ProductFeatures = () => {
                     </p>
                 </div>
                 <img src={Profile} className="object-scale-down max-h-full mx-auto object-left"
-                        alt="User Profile">
+                        alt="User Profile" loading="lazy">
                 </img>
             </div>
         </section>
