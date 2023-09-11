@@ -131,9 +131,10 @@ const Home = () => {
             </h1>
             <Row className="">
                 <Col className="flex">
-                    <div className="">
+                    <div className="" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={Meixuan}
-                            className="inset-0 scale-50 py-28 px-16 mx-auto aos-init aos-animate"
+                            className="aos-init aos-animate"
+                            style={{ width: "60%", height: "60%", justifyContent: 'center' }}
                             alt="Meixuan">
                         </img>
                     </div>
@@ -145,13 +146,14 @@ const Home = () => {
                     </div>
                 </Col>
                 <Col className="flex">
-                    <div className="">
+                    <div className="" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={Vincent}
-                            className="inset-0 scale-75 py-28 aos-init aos-animate"
+                            className="aos-init aos-animate"
+                            style={{ width: "60%", height: "60%", justifyContent: 'center' }}
                             alt="Vincent">
                         </img>
                     </div>
-                    <div className="item-body py-48 px-16">
+                    <div className="item-body py-48 px-12">
                         <h3 className="bg-clip-text text-stone-950 font-semibold uppercase aos-init aos-animate">Sun Pao-Sheng,</h3>
                         <h3 className="bg-clip-text text-stone-950 font-semibold uppercase aos-init aos-animate">Vincent孫寶勝</h3>
                         <br />
