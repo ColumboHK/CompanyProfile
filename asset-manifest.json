@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CompanyProfile/static/css/main.33bd1bf7.css",
-    "main.js": "/CompanyProfile/static/js/main.0f188f4e.js",
+    "main.css": "/CompanyProfile/static/css/main.d840745b.css",
+    "main.js": "/CompanyProfile/static/js/main.ebf50145.js",
     "static/js/787.e9a64b2d.chunk.js": "/CompanyProfile/static/js/787.e9a64b2d.chunk.js",
     "static/media/Meixuan.jpg": "/CompanyProfile/static/media/Meixuan.ae2bd97411f40e9aee88.jpg",
     "static/media/TeamPhoto.jpg": "/CompanyProfile/static/media/TeamPhoto.d407d1b82d43baeef654.jpg",
@@ -29,12 +29,12 @@
     "static/media/HKTech300.png": "/CompanyProfile/static/media/HKTech300.cc0711a231bdf94a0bed.png",
     "static/media/Yue.jpg": "/CompanyProfile/static/media/Yue.5b1f67f5646e644f2fba.jpg",
     "index.html": "/CompanyProfile/index.html",
-    "main.33bd1bf7.css.map": "/CompanyProfile/static/css/main.33bd1bf7.css.map",
-    "main.0f188f4e.js.map": "/CompanyProfile/static/js/main.0f188f4e.js.map",
+    "main.d840745b.css.map": "/CompanyProfile/static/css/main.d840745b.css.map",
+    "main.ebf50145.js.map": "/CompanyProfile/static/js/main.ebf50145.js.map",
     "787.e9a64b2d.chunk.js.map": "/CompanyProfile/static/js/787.e9a64b2d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33bd1bf7.css",
-    "static/js/main.0f188f4e.js"
+    "static/css/main.d840745b.css",
+    "static/js/main.ebf50145.js"
   ]
 }
