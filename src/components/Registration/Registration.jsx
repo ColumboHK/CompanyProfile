@@ -85,7 +85,7 @@ const Registration = () => {
                                           dark:placeholder-gray-500 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                                type="text" value={confirmPassword} onChange = {(e) => handleInputChange(e)} id="confirmPassword" placeholder="Confirm Password"/>
                     </div>
-                    <div className="pb-2 flex" style={{ justifyContent: 'center', alignItems: 'center'}}>
+                    <div className="pt-4 pb-2 flex" style={{ justifyContent: 'center', alignItems: 'center'}}>
                         <button onClick={()=>handleSubmit()} type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full">
                             Register
                         </button>

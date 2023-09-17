@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 
-import logo from "../Assets/logo.png";
+import logo from "../Assets/logo.jpg";
 
 import { AiOutlineHome, 
          AiFillQuestionCircle,
@@ -36,7 +36,7 @@ const NavBar = (props) => {
             " flex flex-wrap items-center justify-between px-2 py-3 "
           }>
         {/* // <Navbar expanded={expand} fixed="top" expand="md" className={navColour ? "sticky" : "navbar"} style={{backgroundColor: "rgba(255,255,255,1.0)"}}> */}
-            <Container fluid className="">
+            <Container fluid className="px-4 font-bold">
                 <Navbar.Brand href="/CompanyProfile" className="navbar navbar-light py-0 fixed left-0 top-0">
                     <img src={logo} className="inline-flex object-left-top h-20 w-20" alt="CompanyLogo"></img>
                 </Navbar.Brand>

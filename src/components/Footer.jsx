@@ -13,8 +13,8 @@ const Footer = () => {
     let year = date.getFullYear();
 
     return (
-        <Container fluid className="bottom-0 pt-10 pb-8 bg-gray-300">
-            <Row>
+        <div fluid className="bottom-0 pt-10 pb-8 bg-[#8598CF] bg-opacity-70 flex justify-end">
+            {/* <Row>
                 <Col md={4} className="text-center">
                     <h3 className="text-xs my-8">
                         Property of Columbo
@@ -25,7 +25,7 @@ const Footer = () => {
                         Copyright © {year}
                     </h3>
                 </Col>
-                <Col md={4} className="content-evenly contents">
+                <Col md={4} className="content-evenly contents justify-rights align-right">
                     <a href="https://twitter.com/Columbo-App-filler"
                        style={{ paddingTop:32, paddingLeft:28, alignItems:"center", aspectRatio:"auto", color:"black" }}
                        target="_blank"
@@ -45,8 +45,33 @@ const Footer = () => {
                         <FaLinkedinIn />
                     </a>
                 </Col>
-            </Row>
-        </Container>
+            </Row> */}
+            <h3 className="text-xs my-8 pr-12">
+                Property of Columbo
+            </h3>
+            <h3 className="text-xs my-8">
+                Copyright © {year}
+            </h3>
+            <a href="https://twitter.com/Columbo-App-filler"
+                style={{ paddingTop:32, paddingLeft:28, alignItems:"center", aspectRatio:"auto", color:"black" }}
+                target="_blank"
+                rel="noopener noreferrer">
+                <AiOutlineTwitter />
+            </a>
+            <a href="https://www.instagram.com/Columbo-App-filler"
+                style={{ paddingTop:32, paddingLeft:28, alignItems:"center", aspectRatio:"auto", color:"black" }}
+                target="_blank"
+                rel="noopener noreferrer">
+                <AiFillInstagram />
+            </a>
+            <a href="https://www.linkedin.com/in/Columbo-App-filler"
+                className="pr-12"
+                style={{ paddingTop:32, paddingLeft:28, alignItems:"center", aspectRatio:"auto", color:"black" }}
+                target="_blank"
+                rel="noopener noreferrer">
+                <FaLinkedinIn />
+            </a>
+        </div>
     );
 }
 

@@ -3,23 +3,23 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.css';
 import TypeWriter from "./TypeWriter";
-import CityUHK from "../../Assets/CityUHK.svg";
-import HKTech300 from "../../Assets/HKTech300.png";
-import HKSTP from "../../Assets/HKSTP.png";
+import CityUHK from "../../Assets/CityUHK.jpg";
+import HKTech300 from "../../Assets/HKTech300.jpg";
+import HKSTP from "../../Assets/HKSTP.jpg";
 import UseCases from "../UseCases/UseCases";
 import TeamPhoto from "../../Assets/TeamPhoto.jpg";
 import Meixuan from "../../Assets/Meixuan.jpg";
 import Yue from "../../Assets/Yue.jpg";
 import Vincent from "../../Assets/Vincent.jpg";
-import ProductOverview from "../../Assets/ProductOverview.png";
-import Group from "../../Assets/Group.png";
+import ProductOverview from "../../Assets/ProductOverview.jpg";
+import Group from "../../Assets/Group.jpg";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Home = () => {
   return (
-    <section className="bg-cyan-50">
+    <section className="bg-cyan-50 px-24">
         {/* pt-20 means padding-top with 80px
             px-0 means padding-left: 0px, padding-right: 0px*/}
         <Container fluid className={"no-gutters mx-0 px-4 pt-32 bg-cyan-50"}>
@@ -34,7 +34,7 @@ const Home = () => {
                         Sign Up Today
                         </span>
                     </div>
-                    <div style={{display:'flex', justifyContent:'left'}}>
+                    <div className="font-serif" style={{display:'flex', justifyContent:'left'}}>
                         <h2 data-aos="fade-right" data-aos-once="true" 
                             className="text-[2.5rem] sm:text-5xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10 aos-init aos-animate">
                             Welcome aboard! Immerse yourself in vibrant communities with
@@ -45,7 +45,7 @@ const Home = () => {
                 </Col>
                 {/* fontFamily contains: serif, sans-serif, cursive, fantasy, system-ui, ui-serif, ui-sans-serif, ui-monospace, ui-rounded */}
                 <Col sm={6} style={{display:'flex', justifyContent:'left', fontSize:"25px", fontWeight:"bold", fontStyle:"italic", fontFamily:"cursive"}}>
-                    <div style={{ padding: 150, textAlign: "left" }}>
+                    <div className="font-serif" style={{ padding: 150, textAlign: "left" }}>
                         {/* This is where the typewriter goes */}
                         <TypeWriter />  
                     </div>
@@ -56,7 +56,7 @@ const Home = () => {
                 <a class="text-sm text-center rounded-full hover:shadow-md 
                           hover:shadow-[#0c66ee]/50 transition duration-300 
                           max-w-full px-8 py-4 bg-gradient-to-r from-[#468ef9] 
-                          to-[#0c66ee] border border-[#0c66ee] text-white"
+                          to-[#0c66ee] border border-[#0c66ee] text-white font-bold"
                     href="/ProductFeatures">
                         Get Started
                 </a>
@@ -65,19 +65,20 @@ const Home = () => {
                 <a class="text-sm text-center rounded-full hover:shadow-md 
                           hover:shadow-[#0c66ee]/50 transition duration-300 
                           max-w-full px-6 py-4 bg-inherit text-gradient border 
-                          border-[#0c66ee] flex items-center justify-center text-black"
+                          border-[#0c66ee] flex items-center justify-center text-black font-bold"
                     href="/Registration">
                         Join Us!
                 </a>
             </div>
         </Container>
         <div className="px-12 py-16 flex">
-            <img src={ProductOverview} className="object-scale-down max-h-full mx-auto object-left"
+            <img src={ProductOverview} className="object-scale-down mx-auto object-left"
+                    style={{ width: "60%", height: "60%" }}
                     alt="Product Overview" loading="lazy">
             </img>
-            <div className="px-12 pt-40">
+            <div className="px-8 pt-40">
                 <h2 className="">
-                    Connect with your world through community power
+                Connect with Your World Through Community Power:
                 </h2>
                 {/* <br/> */}
                 <h2 className="italic text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-400">
@@ -85,7 +86,7 @@ const Home = () => {
                 </h2>
             </div>
         </div>
-        <div fluid className="top-auto bottom-0 left-0 right-0 w-full relative pointer-events-none overflow-hidden"
+        {/* <div fluid className="top-auto bottom-0 left-0 right-0 w-full relative pointer-events-none overflow-hidden"
                 style={{ height: "70px" }}>
                 <svg
                     className="relative bottom-0 overflow-hidden bg-gradient-to-r from-purple-100 to-purple-500"
@@ -102,22 +103,23 @@ const Home = () => {
                         // points="0 0 0 100 2560 0"
                     ></polygon>
                 </svg>
-        </div>
+        </div> */}
         <div className="px-12 py-16 flex">
-            <div className="px-12 pt-40 text-xl">
+            <div className="pt-40 text-xl">
                 <ul className="list-disc">
-                    <li>Recognize your real-world connections by groups</li>
+                    <li>Recognize your <span className="text-transparent font-bold bg-clip-text bg-gradient-to-r from-blue-300 to-blue-400">real-world connections</span> by groups</li>
                     <li>Power community building</li>
                     <li>Organize community events</li>
                     <li>Provide public spaces</li>
                     <li>Boost the communications of communities</li>
                 </ul>
             </div>
-            <img src={Group} className="object-scale-down max-h-full mx-auto object-left"
+            <img src={Group} className="object-scale-down mx-auto object-left"
+                    style={{ width: "60%", height: "60%" }}
                     alt="Group Functions">
             </img>
         </div>
-        <div fluid className="top-auto bottom-0 left-0 right-0 w-full relative pointer-events-none overflow-hidden"
+        {/* <div fluid className="top-auto bottom-0 left-0 right-0 w-full relative pointer-events-none overflow-hidden"
                 style={{ height: "70px" }}>
                 <svg
                     className="relative bottom-0 overflow-hidden bg-gradient-to-r from-purple-100 to-purple-500"
@@ -134,7 +136,7 @@ const Home = () => {
                         points="0 0 0 100 2560 0"
                     ></polygon>
                 </svg>
-        </div>
+        </div> */}
         {/* <div style={{display:'flex', justifyContent:'left',
                          backgroundImage: `url(${TeamPhoto})`, height: 600}} className="py-10 bottom-0 left-0 right-0 top-0 w-full h-full bg-center bg-cover overflow-hidden">
                 <h1 data-aos="fade-right" data-aos-once="true" 
@@ -152,7 +154,7 @@ const Home = () => {
                     <div className="" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={Meixuan}
                             className="aos-init aos-animate"
-                            style={{ width: "60%", height: "60%", justifyContent: 'center' }}
+                            style={{ width: "60%", height: "40%", justifyContent: 'center' }}
                             alt="Meixuan" loading="lazy">
                         </img>
                     </div>
@@ -167,7 +169,7 @@ const Home = () => {
                     <div className="" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={Vincent}
                             className="aos-init aos-animate"
-                            style={{ width: "60%", height: "60%", justifyContent: 'center' }}
+                            style={{ width: "60%", height: "40%", justifyContent: 'center' }}
                             alt="Vincent" loading="lazy">
                         </img>
                     </div>
@@ -180,7 +182,7 @@ const Home = () => {
                 </Col>
             </Row>
         </Container>
-        <div fluid className="top-auto bottom-0 left-0 right-0 w-full relative pointer-events-none overflow-hidden"
+        {/* <div fluid className="top-auto bottom-0 left-0 right-0 w-full relative pointer-events-none overflow-hidden"
                 style={{ height: "70px" }}>
                 <svg
                     className="relative bottom-0 overflow-hidden bg-gradient-to-r from-purple-100 to-purple-500"
@@ -197,8 +199,8 @@ const Home = () => {
                         // points="0 0 0 100 2560 0"
                     ></polygon>
                 </svg>
-        </div>
-        <Container fluid className="no-gutters mx-0 px-4 bg-cyan-50">
+        </div> */}
+        <Container fluid className="no-gutters mx-0 bg-cyan-50 pt-16">
             <div style={{display:'flex', justifyContent:'left'}} className="py-10">
                 <h1 data-aos="fade-up" data-aos-once="true" data-aos-duration='100'
                     className="text-[2.5rem] sm:text-5xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10 aos-init aos-animate">
@@ -208,34 +210,37 @@ const Home = () => {
             <Row className="">
                 <Col className="content-center">
                     <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={CityUHK}
-                         className="inset-0 scale-75 py-28 mx-auto aos-init aos-animate"
+                         className="inset-0 mx-auto aos-init aos-animate"
+                         style={{ width: "60%", height: "30%", justifyContent: 'center' }}
                          alt="CityUHK" loading="lazy">
                     </img>
-                    <p className="text-center font-bold italic">
+                    <p className="pt-12 text-center font-bold font-serif">
                         City University of Hong Kong
                     </p>
                 </Col>
                 <Col className="content-center">
                     <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={HKTech300}
-                         className="inset-0 scale-75 mx-auto aos-init aos-animate"
+                         className="inset-0 mx-auto aos-init aos-animate"
+                         style={{ width: "60%", height: "30%", justifyContent: 'center' }}
                          alt="HKTech 300" loading="lazy">
                     </img>
-                    <p className="text-center font-bold italic">
+                    <p className="pt-12 text-center font-bold font-serif">
                     HKTech 300
                     </p>
                 </Col>
                 <Col className="content-center">
                     <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={HKSTP}
-                         className="inset-0 scale-75 py-24 mx-auto aos-init aos-animate"
+                         className="inset-0 mx-auto aos-init aos-animate"
+                         style={{ width: "60%", height: "30%", justifyContent: 'center' }}
                          alt="HKSTP" loading="lazy">
                     </img>
-                    <p className="text-center font-bold italic">
+                    <p className="pt-12 text-center font-bold font-serif">
                     HKSTP
                     </p>
                 </Col>
             </Row>
         </Container>
-        <div fluid className="top-auto bottom-0 left-0 right-0 w-full relative pointer-events-none overflow-hidden"
+        {/* <div fluid className="top-auto bottom-0 left-0 right-0 w-full relative pointer-events-none overflow-hidden"
                 style={{ height: "70px" }}>
                 <svg
                     className="relative bottom-0 overflow-hidden bg-gradient-to-r from-purple-100 to-purple-500"
@@ -252,7 +257,7 @@ const Home = () => {
                         points="0 0 0 100 2560 0"
                     ></polygon>
                 </svg>
-        </div>
+        </div> */}
     </section>
   );
 }
