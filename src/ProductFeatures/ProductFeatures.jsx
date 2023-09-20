@@ -17,8 +17,9 @@ import Profile from "../Assets/Profile.jpg";
 
 const ProductFeatures = () => {
     return (
-        <section className="bg-cyan-50 px-24 pb-12">
-            <div className="px-12 pt-40 mx-auto flex">
+        <div>
+        {/* <section className="bg-cyan-50 px-24 pb-12"> */}
+            <div className="px-12 pt-40 mx-auto flex bg-[#D4E1F1]">
                 <div className="px-12 pt-40 text-xl">
                     <h1 className="px-12 text-[2.5rem] font-bold leading-tight capitalize">
                         Various settings of groups and subgroups
@@ -34,7 +35,7 @@ const ProductFeatures = () => {
                 </img>
             </div>
             
-            <div className="px-12 pt-12 mx-auto flex">
+            <div className="px-12 pt-12 mx-auto flex bg-[#E7EFF8]">
                 <img src={SubGroup} className="object-scale-down pt-4 mx-auto object-left"
                     style={{ width: "50%", height: "50%" }}
                     alt="Sub-groups" loading="lazy">
@@ -49,7 +50,7 @@ const ProductFeatures = () => {
                 </div>
             </div>
             
-            <div className="px-12 pt-12 mx-auto flex">
+            <div className="px-12 pt-12 mx-auto flex bg-[#D4E1F1]">
                 <div className="px-12 pt-40 text-xl">
                     <h1 className="px-12 text-[2.5rem] font-bold leading-tight capitalize">
                         Post events and tweets among different subgroups
@@ -64,7 +65,7 @@ const ProductFeatures = () => {
                 </img>
             </div>
             
-            <div className="px-12 pt-12 mx-auto flex">
+            <div className="px-12 pt-12 mx-auto flex bg-[#E7EFF8]">
                 <img src={Messaging} className="object-scale-down pt-4 mx-auto object-left"
                     style={{ width: "50%", height: "50%" }}
                     alt="Messaging" loading="lazy">
@@ -79,7 +80,7 @@ const ProductFeatures = () => {
                 </div>
             </div>
             
-            <div className="px-12 pt-12 mx-auto flex">
+            <div className="px-12 pt-12 mx-auto flex bg-[#D4E1F1]">
                 <div className="px-12 pt-56 text-xl">
                     <h1 className="px-12 text-[2.5rem] font-bold leading-tight capitalize">
                         Establish personal profiles by social identities
@@ -95,7 +96,8 @@ const ProductFeatures = () => {
                         alt="User Profile" loading="lazy">
                 </img>
             </div>
-        </section>
+        {/* </section> */}
+        </div>
     );
   }
   

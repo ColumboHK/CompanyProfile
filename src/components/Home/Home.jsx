@@ -19,10 +19,11 @@ import 'aos/dist/aos.css';
 
 const Home = () => {
   return (
-    <section className="bg-cyan-50 px-24">
+    // <section className="bg-cyan-50 px-24">
+    <div>
         {/* pt-20 means padding-top with 80px
             px-0 means padding-left: 0px, padding-right: 0px*/}
-        <Container fluid className={"no-gutters mx-0 px-4 pt-32 bg-cyan-50"}>
+        <Container fluid className={"no-gutters mx-0 px-4 pt-32 pb-24 bg-[#D4E1F1]"}>
             <Row>
                 {/* Within Col, we can add the following parameter
                 xs=6, which means 6 parts of screen on small screen
@@ -71,53 +72,55 @@ const Home = () => {
                 </a>
             </div>
         </Container>
-        <div className="px-12 py-16 flex">
-            <img src={ProductOverview} className="object-scale-down mx-auto object-left"
-                    style={{ width: "60%", height: "60%" }}
-                    alt="Product Overview" loading="lazy">
-            </img>
-            <div className="px-8 pt-40">
-                <h2 className="">
-                Connect with Your World Through Community Power:
-                </h2>
-                {/* <br/> */}
-                <h2 className="italic text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-400">
-                    Build, Organize, Provide!
-                </h2>
+        <div className="bg-[#E7EFF8]">
+            <div className="px-12 py-16 flex">
+                <img src={ProductOverview} className="object-scale-down mx-auto object-left"
+                        style={{ width: "60%", height: "60%" }}
+                        alt="Product Overview" loading="lazy">
+                </img>
+                <div className="px-8 pt-40">
+                    <h2 className="">
+                    Connect with Your World Through Community Power:
+                    </h2>
+                    {/* <br/> */}
+                    <h2 className="italic text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-blue-400">
+                        Build, Organize, Provide!
+                    </h2>
+                </div>
             </div>
-        </div>
-        {/* <div fluid className="top-auto bottom-0 left-0 right-0 w-full relative pointer-events-none overflow-hidden"
-                style={{ height: "70px" }}>
-                <svg
-                    className="relative bottom-0 overflow-hidden bg-gradient-to-r from-purple-100 to-purple-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    preserveAspectRatio="none"
-                    version="1.1"
-                    viewBox="0 0 2560 100"
-                    x="0"
-                    y="0"
-                >
-                    <polygon
-                        className="text-cyan-50 fill-current"
-                        points="2560 0 2560 100 0 0"
-                        // points="0 0 0 100 2560 0"
-                    ></polygon>
-                </svg>
-        </div> */}
-        <div className="px-12 py-16 flex">
-            <div className="pt-40 text-xl">
-                <ul className="list-disc">
-                    <li>Recognize your <span className="text-transparent font-bold bg-clip-text bg-gradient-to-r from-blue-300 to-blue-400">real-world connections</span> by groups</li>
-                    <li>Power community building</li>
-                    <li>Organize community events</li>
-                    <li>Provide public spaces</li>
-                    <li>Boost the communications of communities</li>
-                </ul>
+            {/* <div fluid className="top-auto bottom-0 left-0 right-0 w-full relative pointer-events-none overflow-hidden"
+                    style={{ height: "70px" }}>
+                    <svg
+                        className="relative bottom-0 overflow-hidden bg-gradient-to-r from-purple-100 to-purple-500"
+                        xmlns="http://www.w3.org/2000/svg"
+                        preserveAspectRatio="none"
+                        version="1.1"
+                        viewBox="0 0 2560 100"
+                        x="0"
+                        y="0"
+                    >
+                        <polygon
+                            className="text-cyan-50 fill-current"
+                            points="2560 0 2560 100 0 0"
+                            // points="0 0 0 100 2560 0"
+                        ></polygon>
+                    </svg>
+            </div> */}
+            <div className="px-12 py-16 flex">
+                <div className="pt-40 text-xl">
+                    <ul className="list-disc">
+                        <li>Recognize your <span className="text-transparent font-bold bg-clip-text bg-gradient-to-r from-blue-300 to-blue-400">real-world connections</span> by groups</li>
+                        <li>Power community building</li>
+                        <li>Organize community events</li>
+                        <li>Provide public spaces</li>
+                        <li>Boost the communications of communities</li>
+                    </ul>
+                </div>
+                <img src={Group} className="object-scale-down mx-auto object-left"
+                        style={{ width: "60%", height: "60%" }}
+                        alt="Group Functions">
+                </img>
             </div>
-            <img src={Group} className="object-scale-down mx-auto object-left"
-                    style={{ width: "60%", height: "60%" }}
-                    alt="Group Functions">
-            </img>
         </div>
         {/* <div fluid className="top-auto bottom-0 left-0 right-0 w-full relative pointer-events-none overflow-hidden"
                 style={{ height: "70px" }}>
@@ -144,7 +147,7 @@ const Home = () => {
                     Our Team
                 </h1>
             </div> */}
-        <Container fluid className="mx-0 px-4 bg-cyan-50">
+        <Container fluid className="mx-0 px-4 pt-12 bg-[#D4E1F1]">
             <h1 data-aos="fade-right" data-aos-once="true" 
                 className="text-[2.5rem] sm:text-5xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10 aos-init aos-animate">
                 Our Team
@@ -154,7 +157,7 @@ const Home = () => {
                     <div className="" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={Meixuan}
                             className="aos-init aos-animate"
-                            style={{ width: "60%", height: "40%", justifyContent: 'center' }}
+                            style={{ width: "60%", height: "60%", justifyContent: 'center' }}
                             alt="Meixuan" loading="lazy">
                         </img>
                     </div>
@@ -169,7 +172,7 @@ const Home = () => {
                     <div className="" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={Vincent}
                             className="aos-init aos-animate"
-                            style={{ width: "60%", height: "40%", justifyContent: 'center' }}
+                            style={{ width: "60%", height: "60%", justifyContent: 'center' }}
                             alt="Vincent" loading="lazy">
                         </img>
                     </div>
@@ -200,7 +203,7 @@ const Home = () => {
                     ></polygon>
                 </svg>
         </div> */}
-        <Container fluid className="no-gutters mx-0 bg-cyan-50 pt-16">
+        <Container fluid className="no-gutters mx-0 bg-[#E7EFF8] pt-16">
             <div style={{display:'flex', justifyContent:'left'}} className="py-10">
                 <h1 data-aos="fade-up" data-aos-once="true" data-aos-duration='100'
                     className="text-[2.5rem] sm:text-5xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10 aos-init aos-animate">
@@ -211,7 +214,7 @@ const Home = () => {
                 <Col className="content-center">
                     <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={CityUHK}
                          className="inset-0 mx-auto aos-init aos-animate"
-                         style={{ width: "60%", height: "30%", justifyContent: 'center' }}
+                         style={{ width: "60%", height: "60%", justifyContent: 'center' }}
                          alt="CityUHK" loading="lazy">
                     </img>
                     <p className="pt-12 text-center font-bold font-serif">
@@ -221,7 +224,7 @@ const Home = () => {
                 <Col className="content-center">
                     <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={HKTech300}
                          className="inset-0 mx-auto aos-init aos-animate"
-                         style={{ width: "60%", height: "30%", justifyContent: 'center' }}
+                         style={{ width: "60%", height: "60%", justifyContent: 'center' }}
                          alt="HKTech 300" loading="lazy">
                     </img>
                     <p className="pt-12 text-center font-bold font-serif">
@@ -231,7 +234,7 @@ const Home = () => {
                 <Col className="content-center">
                     <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={HKSTP}
                          className="inset-0 mx-auto aos-init aos-animate"
-                         style={{ width: "60%", height: "30%", justifyContent: 'center' }}
+                         style={{ width: "60%", height: "60%", justifyContent: 'center' }}
                          alt="HKSTP" loading="lazy">
                     </img>
                     <p className="pt-12 text-center font-bold font-serif">
@@ -258,7 +261,8 @@ const Home = () => {
                     ></polygon>
                 </svg>
         </div> */}
-    </section>
+    </div>
+    // </section>
   );
 }
 
