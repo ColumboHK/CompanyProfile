@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/CompanyProfile/static/css/main.20be6067.css",
-    "main.js": "/CompanyProfile/static/js/main.7583c9e6.js",
+    "main.js": "/CompanyProfile/static/js/main.e46ceeb7.js",
     "static/js/787.e9a64b2d.chunk.js": "/CompanyProfile/static/js/787.e9a64b2d.chunk.js",
-    "static/media/Meixuan.jpg": "/CompanyProfile/static/media/Meixuan.ae2bd97411f40e9aee88.jpg",
-    "static/media/Vincent.jpg": "/CompanyProfile/static/media/Vincent.053e12047d0f10f1179e.jpg",
     "static/media/TeamPhoto.jpg": "/CompanyProfile/static/media/TeamPhoto.d407d1b82d43baeef654.jpg",
+    "static/media/Meixuan.jpg": "/CompanyProfile/static/media/Meixuan.309c5ea9bdad793a9f23.jpg",
+    "static/media/Vincent.jpg": "/CompanyProfile/static/media/Vincent.ccbcb7359cde8d082d1d.jpg",
     "static/media/Advanced_Community_Management1.png": "/CompanyProfile/static/media/Advanced_Community_Management1.2b97e0c448f6c5a1ff41.png",
     "static/media/Profile.jpg": "/CompanyProfile/static/media/Profile.88682dc31628547fc22f.jpg",
     "static/media/SubGroup.jpg": "/CompanyProfile/static/media/SubGroup.a54d0422b3884280b28f.jpg",
@@ -29,11 +29,11 @@
     "static/media/Yue.jpg": "/CompanyProfile/static/media/Yue.5b1f67f5646e644f2fba.jpg",
     "index.html": "/CompanyProfile/index.html",
     "main.20be6067.css.map": "/CompanyProfile/static/css/main.20be6067.css.map",
-    "main.7583c9e6.js.map": "/CompanyProfile/static/js/main.7583c9e6.js.map",
+    "main.e46ceeb7.js.map": "/CompanyProfile/static/js/main.e46ceeb7.js.map",
     "787.e9a64b2d.chunk.js.map": "/CompanyProfile/static/js/787.e9a64b2d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.20be6067.css",
-    "static/js/main.7583c9e6.js"
+    "static/js/main.e46ceeb7.js"
   ]
 }
