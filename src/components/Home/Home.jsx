@@ -152,18 +152,51 @@ const Home = () => {
                 className="text-[2.5rem] sm:text-5xl xl:text-6xl font-bold leading-tight capitalize sm:pr-8 xl:pr-10 aos-init aos-animate">
                 Our Team
             </h1>
-            <Row className="">
-                <Col className="flex">
-                    <div className="" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+            <div className="flex">
+                <div className="">
+                    <div className="" style={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
                         <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={Meixuan}
                             className="aos-init aos-animate"
-                            style={{ width: "60%", height: "60%", justifyContent: 'center' }}
+                            style={{ width: "80%", height: "80%", justifyContent: 'center', objectFit: "contain" }}
                             alt="Meixuan" loading="lazy">
                         </img>
                     </div>
-                    <div className="item-body py-48 px-12">
-                        <h3 className="bg-clip-text text-stone-950 font-semibold uppercase aos-init aos-animate">Li Meixuan,</h3>
-                        <h3 className="bg-clip-text text-stone-950 font-semibold uppercase aos-init aos-animate">Jade 李美璇</h3>
+                    <div className="item-body py-12" style={{ justifyContent: "center", textAlign: "center"}}>
+                        <h3 className="bg-clip-text text-stone-950 font-semibold uppercase aos-init aos-animate">Li Meixuan Jade</h3>
+                        <h3 className="bg-clip-text text-stone-950 font-semibold uppercase aos-init aos-animate">李美璇</h3>
+                        <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-400">Co-Founder</h4>
+                    </div>
+                </div>
+                <div className="">
+                    <div className="" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                        <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={Vincent}
+                            className="aos-init aos-animate"
+                            style={{ width: "80%", height: "80%", justifyContent: 'center', objectFit: "contain" }}
+                            alt="Vincent" loading="lazy">
+                        </img>
+                    </div>
+                    <div className="item-body py-12" style={{ justifyContent: "center", textAlign: "center"}}>
+                        <h3 className="bg-clip-text text-stone-950 font-semibold uppercase aos-init aos-animate">Sun Pao-Sheng Vincent</h3>
+                        <h3 className="bg-clip-text text-stone-950 font-semibold uppercase aos-init aos-animate">孫寶勝</h3>
+                        <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-400">Co-Founder</h4>
+                    </div>
+                </div>
+            </div>
+            {/* <Row className="">
+                <Col className="flex">
+                    <div className="" style={{ display: "flex", justifyContent: "center", alignItems: "center"}}>
+                        <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={Meixuan}
+                            className="aos-init aos-animate"
+                            style={{ width: "80%", height: "80%", justifyContent: 'center', objectFit: "contain" }}
+                            alt="Meixuan" loading="lazy">
+                        </img>
+                    </div>
+                    <div className="item-body py-48">
+                        <h3 className="bg-clip-text text-stone-950 font-semibold uppercase aos-init aos-animate">Li Meixuan</h3>
+                        <br />
+                        <h3 className="bg-clip-text text-stone-950 font-semibold uppercase aos-init aos-animate">Jade</h3>
+                        <br />
+                        <h3 className="bg-clip-text text-stone-950 font-semibold uppercase aos-init aos-animate">李美璇</h3>
                         <br />
                         <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-400">Co-Founder</h4>
                     </div>
@@ -172,18 +205,21 @@ const Home = () => {
                     <div className="" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
                         <img data-aos="fade-up" data-aos-once="true" data-aos-duration='100' src={Vincent}
                             className="aos-init aos-animate"
-                            style={{ width: "60%", height: "60%", justifyContent: 'center' }}
+                            style={{ width: "80%", height: "80%", justifyContent: 'center', objectFit: "contain" }}
                             alt="Vincent" loading="lazy">
                         </img>
                     </div>
-                    <div className="item-body py-48 px-12">
+                    <div className="item-body py-48" style={{ objectFit: "contain" }}>
                         <h3 className="bg-clip-text text-stone-950 font-semibold uppercase aos-init aos-animate">Sun Pao-Sheng,</h3>
-                        <h3 className="bg-clip-text text-stone-950 font-semibold uppercase aos-init aos-animate">Vincent孫寶勝</h3>
+                        <br />
+                        <h3 className="bg-clip-text text-stone-950 font-semibold uppercase aos-init aos-animate">Vincent</h3>
+                        <br />
+                        <h3 className="bg-clip-text text-stone-950 font-semibold uppercase aos-init aos-animate">孫寶勝</h3>
                         <br />
                         <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-400">Co-Founder</h4>
                     </div>
                 </Col>
-            </Row>
+            </Row> */}
         </Container>
         {/* <div fluid className="top-auto bottom-0 left-0 right-0 w-full relative pointer-events-none overflow-hidden"
                 style={{ height: "70px" }}>
